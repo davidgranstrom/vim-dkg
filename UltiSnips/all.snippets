@@ -1,0 +1,53 @@
+##############################################################################
+#                             Global Snippets                                #
+##############################################################################
+
+###############
+#  quotation  #
+###############
+
+snippet " "double quotes" i
+"${1}"${2}
+endsnippet
+
+snippet ' "single quotes" i
+'${1}'${2}
+endsnippet
+
+############
+#  braces  #
+############
+
+snippet { "{} braces" iw
+{ ${1} }${0}
+endsnippet
+
+snippet ( "() braces" iw
+(${1})${0}
+endsnippet
+
+snippet [ "[] braces" iw
+[ ${1} ]${0}
+endsnippet
+
+##################
+#  block braces  #
+##################
+
+snippet (( "() block" iw
+( 
+    ${1} 
+)${0}
+endsnippet
+
+snippet [[ "[] block" iw
+[ 
+    ${1} 
+]${0}
+endsnippet
+
+snippet {{ "{} block" iw
+{ 
+    ${1} 
+}${0}
+endsnippet
