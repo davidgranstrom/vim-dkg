@@ -179,4 +179,42 @@ snippet cmd
 CmdPeriod.doOnce{ ${1} };
 endsnippet
 
+snippet proto 
+(
+    q = q ? ();
+
+    q.init = {|ev|
+
+    };
+
+    q.makeSynthDefs = {|ev|
+    
+    };
+
+    q.makePatterns = {|ev|
+    
+    };
+
+    q.start = {|ev|
+    
+    };
+
+    q.cleanup = {|ev|
+    
+    };
+
+s.waitForBoot {
+    q.init;
+    s.sync;
+    CmdPeriod.doOnce { q.cleanup; };
+};            
+)
+endsnippet
+
+snippet q.
+q.${1} = {|self|
+	${0}
+};
+endsnippet
+
 # vim:tw=78:
