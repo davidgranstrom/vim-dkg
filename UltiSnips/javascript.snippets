@@ -1,0 +1,84 @@
+extends javascript
+
+snippet req "Description" b
+var $1 = require('${1}');
+$0
+endsnippet
+
+snippet co "console.log" 
+console.log('${1}');
+endsnippet
+
+snippet con "console.log" 
+console.log('$1', ${1});
+endsnippet
+
+snippet ld "log.debug"
+log.debug('$1', ${1});
+endsnippet
+
+snippet li "log.info"
+log.info('$1', ${1});
+endsnippet
+
+snippet exp "exports" b
+exports.$1 = ${1};
+endsnippet
+
+snippet doc "Insert esdoc description"
+/**
+ * ${2:Description}
+ */
+endsnippet
+
+snippet @p "ESDoc param tag"
+@param {${1:type}} ${2:name}
+endsnippet
+
+snippet @ret "ESDoc return tag"
+@returns {${1:type}}
+endsnippet
+
+snippet @priv "ESDoc private tag"
+/**
+ * @private
+ */
+endsnippet
+
+snippet @pub "ESDoc public tag"
+/**
+ * @public
+ */
+endsnippet
+
+snippet @dep "ESDoc public tag"
+/**
+ * @deprecated
+ */
+endsnippet
+
+snippet @ex "ESDoc example tag"
+/**
+ * @example
+ * $0
+ */
+endsnippet
+
+snippet @ign "ESDoc ignore tag"
+/**
+ * @ignore
+ */
+endsnippet
+
+snippet @abs "ESDoc abstract tag"
+/**
+ * ${VISUAL:This method should be overridden by subclass}
+ * @abstract
+ */
+endsnippet
+
+snippet @over "ESDoc override tag"
+/**
+ * @override
+ */
+endsnippet
