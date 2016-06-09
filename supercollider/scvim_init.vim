@@ -2,6 +2,6 @@
 " SCVIM EXTENSIONS
 " ============================================================================
 
-so ~/.vim/bundle/dkg/supercollider/keybindings.vim
+so ~/.vim/bundle/vim-dkg/supercollider/keybindings.vim
 
 au Filetype supercollider,supercollider_help set commentstring=//%s 
