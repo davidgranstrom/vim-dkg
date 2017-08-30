@@ -3,6 +3,8 @@
 " ============================================================================
 
 augroup dkg_sc
+    au!
+
     au Filetype supercollider set commentstring=//%s
     au FileType supercollider setlocal ts=4 sts=4 sw=4
 
