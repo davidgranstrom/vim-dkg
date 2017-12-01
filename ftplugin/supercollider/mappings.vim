@@ -10,7 +10,7 @@ let b:did_ftplugin_mappings = 1
 setlocal commentstring=//%s
 setlocal ts=4 sts=4 sw=4
 
-nmap <Enter> <Plug>(scvim-reload)
+nmap <buffer> <Enter> <Plug>(scvim-reload)
 nnoremap <buffer> K :call SChelp(expand('<cword>'))<CR>
 nnoremap <buffer> <C-e> :call SClang_line()<cr>
 vnoremap <buffer> <C-e> :call SClang_line()<cr>
