@@ -10,7 +10,7 @@ let b:did_scvim_mappings = 1
 setlocal commentstring=//%s
 setlocal ts=4 sts=4 sw=4
 
-nmap <buffer> <Enter> <Plug>(scvim-reload)
+nmap <buffer> <Enter> <Plug>(scvim-reload-toggle)
 
 nnoremap <buffer> K :call SChelp(expand('<cword>'))<CR>
 
